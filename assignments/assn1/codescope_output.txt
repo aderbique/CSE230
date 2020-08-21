@@ -1,0 +1,44 @@
+----------------
+INPUT 1
+----------------
+
+
+----------------
+YOUR OUTPUT 1
+----------------
+Hello World.
+Goodbye World.
+This is my first MIPS program.
+----------------
+INPUT 2
+----------------
+
+
+----------------
+YOUR OUTPUT 2
+----------------
+Hello World.
+Goodbye World.
+This is my first MIPS program.
+----------------
+INPUT 3
+----------------
+
+
+----------------
+YOUR OUTPUT 3
+----------------
+Hello World.
+Goodbye World.
+This is my first MIPS program.
+----------------
+INPUT 4
+----------------
+
+
+----------------
+YOUR OUTPUT 4
+----------------
+Hello World.
+Goodbye World.
+This is my first MIPS program.
