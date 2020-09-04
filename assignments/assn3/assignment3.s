@@ -9,10 +9,10 @@
 #data declarations: declare variable names used in program, storage allocated in RAM
                             .data  
 prompt1:      .asciiz "Enter a value: \n"
-prompt2:      .asciiz "Enter another value:\n"
-prompt3:      .asciiz "Enter one more value: \n"
+prompt2:      .asciiz "\nEnter another value:\n"
+prompt3:      .asciiz "\nEnter one more value: \n"
 
-message1:     .asciiz "num4+num1="
+message1:     .asciiz "\nnum4+num1="
 message2:     .asciiz "\nnum1-num2="
 message3:     .asciiz "\nnum4*num2="
 message4:     .asciiz "\nnum1/num3="
@@ -40,6 +40,11 @@ main:
             syscall                     # execute call
             move $t1, $v0   
 
+            move        $a0, $t1        # copy value for print_int
+            li          $v0, 1          # print_int
+            syscall                     # execute call
+
+
                                         # Print prompt 2
             la          $a0, prompt2    # $a0 = address of prompt2
             li          $v0, 4          # call print_string
@@ -48,7 +53,11 @@ main:
                                         # User input num2
             li          $v0, 5          # call read_int
             syscall                     # execute call
-            move $t2, $v0                        
+            move $t2, $v0     
+            
+            move        $a0, $t2        # copy value for print_int
+            li          $v0, 1          # print_int
+            syscall                     # execute call                   
 
                                         # Print prompt 3
             la          $a0, prompt3    # $a0 = address of prompt3
@@ -59,6 +68,10 @@ main:
             li          $v0, 5          # call read_int
             syscall                     # execute call
             move $t3, $v0            
+            
+            move        $a0, $t3        # copy value for print_int
+            li          $v0, 1          # print_int
+            syscall                     # execute call
 
                                         # Print prompt 3
             la          $a0, prompt3    # $a0 = address of prompt3
@@ -69,6 +82,10 @@ main:
             li          $v0, 5          # call read_int
             syscall                     # execute call
             move $t4, $v0
+            
+            move        $a0, $t4        # copy value for print_int
+            li          $v0, 1          # print_int
+            syscall                     # execute call
 
                                         # Print message 1
             la          $a0, message1   # $a0 = address of message1
