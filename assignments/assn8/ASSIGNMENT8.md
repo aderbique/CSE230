@@ -42,7 +42,7 @@ The division of `0011 0110 base 2 / 0110 base 2`, also known as `54 base 10 / 6 
 |2|1: Rem-=Div,2a: R>=0 sll Q, Q0=1,3: srl Div|0001|00011000|00000110|
 |3|1: Rem-=Div,2b: R<0 Rem+=Div, sll Q, Q0=0|0010|00001100|00000110|
 |4|1: Rem-=Div,2b: R<0 Rem+=Div, sll Q, Q0=0|0100|00000110|00000110|
-|5|1: Rem-=Div,2a: R>=0 skk Q, Q0=1,3: srl Div|1001|00000000|00000000|
+|5|1: Rem-=Div,2a: R>=0 skk Q, Q0=1,3: srl Div|1001|00000011|00000000|
 
 The final answer is `00001001 base 2`, or `9 base 10`.
 
