@@ -162,7 +162,7 @@ Add `8.96 base ten x 10^10` to `6.78 base ten x 10^8`, assuming the following tw
 ### Reponse
 #### With Guard Digits
 1. First, shift smaller exponent to match. `6.78 * 10^8` becomes `0.0678 * 10^10`.
-2. Add significands. `6.78 + 0.0678 = 9.0287`.
+2. Add significands. `8.96 + 0.0678 = 9.0287`.
 3. Normalize the result to `9.0287 * 10^10`.
 4. Round to the nearest three significant digits.
 
