@@ -36,6 +36,7 @@ You can use this table to start: [hw8_2.pdf](docs/hw8_2.pdf)
 ### Response
 The division of `0011 0110 base 2 / 0110 base 2`, also known as `54 base 10 / 6 base 10` can be illustrated in the following steps:
 |Iteration|Step|Quotient|Divisor|Remainder|
+|---------|----|--------|-------|---------|
 |0|Initial Value|0000|01100000|00110110|
 |1|1: Rem-=Div,2b: R<0 Rem+=Div, sll Q, Q0=0, 3: srl Div|0000|00110000|00110110|
 |2|1: Rem-=Div,2a: R>=0 sll Q, Q0=1,3: srl Div|0001|00011000|00000110|
