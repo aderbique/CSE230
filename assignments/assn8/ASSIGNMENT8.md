@@ -87,6 +87,7 @@ What would the number `18653.4140625` base ten be in IEEE 754 single precision f
 
 The final answer is `0 10001101 00100011011101011010100`
 
+Converting to hex, we take `0100 0110 1001 0001 1011 1010 1101 0100 base 2` which yields a result of `0x46BB12D4 base 16`.
 
 ## Exercise 6 (2pts)
 ### Prompt
@@ -100,9 +101,9 @@ What would the number `-18472.40625` base ten be in IEEE 754 single precision fl
 1. Converting `-18472.40625 base 10` to binary yields `-100 1000 0010 1000.0110 1`
 2. The normalized format is `-1 . 0010 0000 1010 0001 1010 base two * 2^14 base 10`.
 3. The biased exponent is `14 + 127 = 141 base 10` or `1000 1101 base 2` binary.
-4. Combine the sign (`1`), biased exponent (`1000 0101`), and mantissa (`0010 0000 1010 0001 1010`)
+4. Combine the sign (`1`), biased exponent (`1000 1101`), and mantissa (`0010 0000 1010 0001 1010`)
 
-The result in binary is `1 10000101 00100000101000011010000`.
+The result in binary is `1 10001101 00100000101000011010000`.
 
 Converting to hex, we take `1100 0110 1001 0000 0101 0000 1101 0000 base 2` which yields a result of `0xc69050d0 base 16`. 
 
