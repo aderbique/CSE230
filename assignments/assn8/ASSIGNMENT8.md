@@ -25,7 +25,7 @@ The multiplication of `0110 base 2 * 0110 base 2`, also known as `6 base 10 * 6 
 |3|1a Prod=Prod+multiplicand, 2=sll by 1, 3=srl by 1|0110000|0|100100|
 |4|2=sll by 1, 3=srl by 1|01100000|-|100100|
 
-The final answer is: `00100100 base 2`, or `36 base 10`.
+The final answer is: `00100100 base 2`, or `36 base 10`. 
 
 ## Exercise 2 (2pts)
 ### Prompt
@@ -44,7 +44,8 @@ The division of `0011 0110 base 2 / 0110 base 2`, also known as `54 base 10 / 6 
 |4|1: Rem-=Div,2b: R<0 Rem+=Div, sll Q, Q0=0|0100|00000110|00000110|
 |5|1: Rem-=Div,2a: R>=0 skk Q, Q0=1,3: srl Div|1001|00000011|00000000|
 
-The final answer is `00001001 base 2`, or `9 base 10`.
+The final answer is `00001001 base 2`, or `9 base 10`.  
+**Note:** Complete intermediate steps are available in the `Work By Hand` section of this document. The table above shows the result of each iteration.
 
 ## Exercise 3 (2pts)
 ### Prompt
