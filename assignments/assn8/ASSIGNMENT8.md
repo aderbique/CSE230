@@ -173,3 +173,11 @@ The final answer is `9.03 * 10^10`.
 4. Round to the nearest three significant digits.
 
 The final result is `9.03 ^ 10^10`.
+
+## Work by Hand
+![Page One](docs/PXL_20201009_182837928.jpg)
+![Page Two](docs/PXL_20201009_182845704.jpg)
+![Page Three](docs/PXL_20201009_182851691.jpg)
+![Page Four](docs/PXL_20201009_182858198.jpg)
+![Page Five](docs/PXL_20201009_182903235.jpg)
+![Page Six](docs/PXL_20201009_182910299.jpg)
