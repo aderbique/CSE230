@@ -15,6 +15,18 @@ You can use this table to start [hw8_1.pdf](docs/hw8_1.pdf)
 
 ### Response
 
+The multiplication of `0110 base 2 * 0110 base 2`, also known as `6 base 10 * 6 base 10` can be illustrated in the following steps
+
+|Iteration|Step|Multiplicant Register Value|Multiplier Register Value|Product Register Value|
+|---------|----|---------------------------|-------------------------|----------------------|
+|0|Initial Values|0110|0110|0|
+|1|1a Prod=Prod+multiplicand, 2=sll by 1, 3=srl by 1|01100|011|0+01100=01100|
+|2|1a Prod=Prod+multiplicand, 2=sll by 1, 3=srl by 1|011000|01|01100+011000=100100|
+|3|1a Prod=Prod+multiplicand, 2=sll by 1, 3=srl by 1|0110000|0|100100|
+|4|2=sll by 1, 3=srl by 1|01100000|-|100100|
+
+Final answer: `100100 base 2`, or `36 base 10`
+
 ## Exercise 2 (2pts)
 ### Prompt
 Perform a division of two binary numbers (divide 0011 0110 by 0110) by creating a table to show steps taken, quotient register value, divisor register value, and remainder register value for each iteration by following the steps described in the following document. (Points will be deducted if steps are now shown.)  
