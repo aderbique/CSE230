@@ -3,7 +3,7 @@
 ### Author: Austin Derbique
 
 ## Disclaimer
-The following text shall not be used for the purposes of academic dishonesty. It is granted only for educational & archival purposes, not to be used by other students enrolled in an artificial intelligence class. This information is not guaranteed to be correct. Please consult the textbook [Computer Organization and Design: Fifth Edition](https://www.amazon.com/Computer-Organization-Design-MIPS-Architecture/dp/0124077269) for up to date and accurate information.
+The following text shall not be used for the purposes of academic dishonesty. It is granted only for educational & archival purposes, not to be used by other students enrolled in a computer organization class for the purposes of receiving academic credit. This information is not guaranteed to be correct. Please consult the textbook [Computer Organization and Design: Fifth Edition](https://www.amazon.com/Computer-Organization-Design-MIPS-Architecture/dp/0124077269) for up to date and accurate information.
 
 # Exercises 
 
