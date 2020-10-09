@@ -57,7 +57,7 @@ Convert -4563 base 10 into a 32-bit two's complement binary number.
 2. Now, to take the two's complement, take the inverse of `0001 0001 1101 0011` and the result is `1110 1110 0010 1100`.
 3. Add `1`. `0000 0000 0000 0001 base two + 1110 1110 0010 1100 base two`,
 
-The final answer  is `1110 1110 0010 1101 base two` binary signed two's complement.
+The final answer in 32 bit is `1111 1111 1111 1111 1110 1110 0010 1101 base two` binary signed two's complement.
 
 ## Exercise 4 (2pts)
 ### Prompt
@@ -147,11 +147,11 @@ For this problem, assume 5 bits precision. Multiply binary two binary numbers, `
 
 ### Response
 1. Adding the exponents together without bias `(-8)+(-6)=-14`.
-2. Multiplying the significands `1.0011 base two * 1.0101 base two` yields a result of `1.01111111`.
-3. Normalizing the product gives the result `1.01111111 * 2^-14`. In this case, the value of the exponent (`113 dec`) is withing bounds, so there is no underflow or overflow.
+2. Multiplying the significands `1.0011 base two * 1.0101 base two` yields a result of `1.10001111`.
+3. Normalizing the product gives the result `1.1000 1111 * 2^-14`. In this case, the value of the exponent (`113 dec`) is withing bounds, so there is no underflow or overflow.
 4. Truncate the normalized number to 5 bits precision yields the final result.
 
-The final answer is `1.0111 base two * 2^-14`.
+The final answer is `1.1000 base two * 2^-14`.
 
 ## Exercise 10 (2pts)
 ### Prompt
