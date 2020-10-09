@@ -174,7 +174,7 @@ The final answer is `9.03 * 10^10`.
 3. Normalize the result to `9.02 * 10^10`.
 4. Round to the nearest three significant digits.
 
-The final result is `9.02 ^ 10^10`.
+The final result is `9.02 * 10^10`.
 
 ## Work by Hand
 ![Page One](docs/PXL_20201009_182837928.jpg)
