@@ -87,7 +87,7 @@ What would the number `18653.4140625` base ten be in IEEE 754 single precision f
 
 The final answer is `0 10001101 00100011011101011010100`
 
-Converting to hex, we take `0100 0110 1001 0001 1011 1010 1101 0100 base 2` which yields a result of `0x46BB12D4 base 16`.
+Converting to hex, we take `0100 0110 1001 0001 1011 1010 1101 0100 base 2` which yields a result of `0x4691BAD4 base 16`.
 
 ## Exercise 6 (2pts)
 ### Prompt
