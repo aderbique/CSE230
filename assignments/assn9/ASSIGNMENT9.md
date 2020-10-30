@@ -114,7 +114,7 @@ We would like to add the “srl” (shift right logical) instruction to the sing
 
 ### Response
 
-!(Single Cycle Control Jump Register)[media/singlecycle_control_srl.jpg]
+![Single Cycle Control Jump Register](media/singlecycle_control_srl.jpg)
 
 |Signal|Value|
 |------|-----|
@@ -136,7 +136,7 @@ We would like to add the “jr” (jump register) instruction to the single cycl
 (You can copy & paste your image back into your document such as MS Word.)  Explain when the new signal(s) that you chose is set to 0, and also 1, if any. Also specify the value of other existing control signals RegDst, ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp0, and ALUOp1.
 ### Response
 
-!(Single Cycle Control Jump Register)[media/singlecycle_control_jr.jpg]
+![Single Cycle Control Jump Register](media/singlecycle_control_jr.jpg)
 
 |Signal|Value|
 |------|-----|
