@@ -92,13 +92,61 @@ ALUOp0 = 1 (always stuck at 1)
 ![Single Cycle Datapaths](media/singlecycle_control.jpg)
 
 ### Response
+In the table below, True means working successfully, False means that the instruction will not work properly.
 
+|Instruction|ALUSrc = 1|Branch = 1|ALUOp0 = 1|
+|-----------|----------|----------|----------|
+|add|False|True|False|
+|sub|False|True|False|
+|or|False|True|False|
+|and|False|True|False|
+|nor|False|True|False|
+|slt|False|True|True|
+|lw|True|True|False|
+|sw|True|True|False|
+|beq|False|False|True|
+|j|True|True|True|
 
-
-## Exercise 4 (2pt)
+## Exercise 4 (5pts)
 ### Prompt
+We would like to add the “srl” (shift right logical) instruction to the single cycle datapath discussed in class.You will need to feed the shamt field to the ALU so that it can shift using the shift amount. (You can assume that the ALU has an implementation of shift right logical if a shift amount and an integer to be shifted are inserted and its ALUOp is 11.) Trace which datapaths in the following picture are used to perform the “srl“ instruction by marking the paths, and add datapath(s) and control signal(s) to the single-cycle datapath for the “srl” instruction, if it is necessary. (You should also make sure that previously existing instructions such as R-format (add,sub,and,or,slt), lw, sw, and beq still work with this additional instruction.) Download the following PDF/JPG file, use some software (for instance, Microsoft Paint) to draw any new datapath(s) and signal(s) using red color.
+(You can copy & paste your image back into your document such as MS Word.)  Explain when the new signal(s) that you chose is set to 0, and also 1, if any. Also specify the value of other existing control signals RegDst, ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp0, and ALUOp1.
+
 ### Response
 
-## Exercise 5 (2pt)
+!(Single Cycle Control Jump Register)[media/singlecycle_control_srl.jpg]
+
+|Signal|Value|
+|------|-----|
+|RegDst|1|
+|AluSrc|0|
+|MemtoReg|0|
+|RegWrite|1|
+|MemRead|0|
+|MemWrite|0|
+|Branch|0|
+|ALUOp0|1|
+|ALUOp1|1|
+
+
+
+## Exercise 5 (5pts)
 ### Prompt
+We would like to add the “jr” (jump register) instruction to the single cycle datapath discussed in class. Trace which datapaths in the following picture are used to perform the “jr“ instruction by marking the paths, and add datapath(s) and control signal(s) to the single-cycle datapath for the “jr” instruction, if it is necessary. (You should also make sure that previously existing instructions such as R-format (add,sub,and,or,slt), lw, sw, and beq still work with this additional instruction.) Download the following PDF/JPG file, and use some software (for instance, Microsoft Paint) to draw any new datapath(s) and signal(s) using  red color.
+(You can copy & paste your image back into your document such as MS Word.)  Explain when the new signal(s) that you chose is set to 0, and also 1, if any. Also specify the value of other existing control signals RegDst, ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp0, and ALUOp1.
 ### Response
+
+!(Single Cycle Control Jump Register)[media/singlecycle_control_jr.jpg]
+
+|Signal|Value|
+|------|-----|
+|Jump|2|
+|RegDst|0|
+|AluSrc|0|
+|MemtoReg|0|
+|RegWrite|0|
+|MemRead|0|
+|MemWrite|0|
+|Branch|0|
+|ALUOp0|0|
+|ALUOp1|1|
